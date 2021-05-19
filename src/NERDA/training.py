@@ -4,7 +4,7 @@ from sklearn import preprocessing
 from transformers import AdamW, get_linear_schedule_with_warmup
 import random
 import torch
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 
 def train(model, data_loader, optimizer, device, scheduler, n_tags):
     """One Iteration of Training"""
